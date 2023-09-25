@@ -8,6 +8,8 @@ body {
   min-width: 1100px;
   margin: 0;
   font-family: Raleway, sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
 }
 
 h1,
