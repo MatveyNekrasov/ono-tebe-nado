@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 49px 92px 51px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
@@ -21,7 +21,7 @@
   list-style: none;
 }
 
-.link-underline-offset {
+.link {
   text-underline-offset: 4px;
 }
 
@@ -57,7 +57,7 @@
 
 .cover {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background: url("../images/cover.jpg") center / cover no-repeat;
 }
 
@@ -74,7 +74,7 @@
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
@@ -83,16 +83,16 @@
   margin-bottom: 20px;
 }
 
+.aligned-text:last-child {
+  margin-bottom: 0;
+}
+
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
   letter-spacing: 0;
-}
-
-.no-margin-bottom {
-  margin-bottom: 0;
 }
 
 .aligned-text-center {
@@ -123,7 +123,7 @@
 }
 
 .bet-button {
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   padding: 12px 32px;
   color: #fff;
   font-family: Raleway, sans-serif;
@@ -169,7 +169,7 @@
 
 .card {
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -261,8 +261,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  gap: 355.5px;
+  gap: 20px;
   padding: 180px 50px 90px;
+}
+
+.footer__address {
+  justify-self: start;
 }
 
 .footer__menu-list {
@@ -283,11 +287,12 @@
 
 .footer__social-list {
   display: flex;
+  justify-self: end;
   gap: 48px;
-  min-width: 240px;
   list-style: none;
 }
 
 .footer__social-icon {
+  width: 48px;
   height: 48px;
 }
