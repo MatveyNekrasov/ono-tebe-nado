@@ -42,7 +42,7 @@
 }
 
 .address {
-  min-width: 240px;
+  max-width: 240px;
   color: #000;
   font-size: 18px;
   font-style: normal;
@@ -237,7 +237,7 @@
 .about__column {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 27px;
 }
 
 .about__title {
@@ -279,10 +279,6 @@
   font-style: normal;
   line-height: normal;
   text-align: center;
-}
-
-.footer__menu-link {
-  text-underline-offset: 4px;
 }
 
 .footer__social-list {
